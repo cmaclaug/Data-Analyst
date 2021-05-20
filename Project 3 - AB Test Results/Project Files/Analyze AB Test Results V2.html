@@ -13096,7 +13096,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13124,10 +13124,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;ab_data.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;ab_data_old.csv&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -13141,7 +13141,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -13233,7 +13233,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
@@ -13249,7 +13249,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -13274,7 +13274,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
@@ -13290,7 +13290,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -13315,7 +13315,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;converted&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -13331,7 +13331,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -13356,7 +13356,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">treatment_wrong</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;group == &quot;treatment&quot; and landing_page == &quot;old_page&quot;&#39;</span><span class="p">)</span>
@@ -13375,7 +13375,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -13467,7 +13467,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bad_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -13516,7 +13516,7 @@ memory usage: 182.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">bad_data</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -13530,7 +13530,7 @@ memory usage: 182.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Double Check all of the correct rows were removed - this should be 0</span>
@@ -13547,7 +13547,7 @@ memory usage: 182.5+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[35]:</div>
 
 
 
@@ -13580,7 +13580,7 @@ memory usage: 182.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
@@ -13596,7 +13596,7 @@ memory usage: 182.5+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[36]:</div>
 
 
 
@@ -13621,7 +13621,7 @@ memory usage: 182.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">duped</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span>
@@ -13642,7 +13642,7 @@ memory usage: 182.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">drop</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="n">duped</span><span class="p">]</span>
@@ -13659,7 +13659,7 @@ memory usage: 182.5+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[38]:</div>
 
 
 
@@ -13719,7 +13719,7 @@ memory usage: 182.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">drop</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -13741,7 +13741,7 @@ memory usage: 182.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pop_conversion</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;converted&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -13758,7 +13758,7 @@ memory usage: 182.5+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[40]:</div>
 
 
 
@@ -13783,7 +13783,7 @@ memory usage: 182.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_control</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;group == &quot;control&quot;&#39;</span><span class="p">)</span>
@@ -13801,7 +13801,7 @@ memory usage: 182.5+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -13826,7 +13826,7 @@ memory usage: 182.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_treatment</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;group == &quot;treatment&quot;&#39;</span><span class="p">)</span>
@@ -13844,7 +13844,7 @@ memory usage: 182.5+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[42]:</div>
 
 
 
@@ -13869,7 +13869,7 @@ memory usage: 182.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_treatment</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">df2</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -13885,7 +13885,7 @@ memory usage: 182.5+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -13956,7 +13956,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pop_conversion</span>
@@ -13972,7 +13972,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[44]:</div>
 
 
 
@@ -13997,7 +13997,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pop_conversion</span>
@@ -14013,7 +14013,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[45]:</div>
 
 
 
@@ -14038,7 +14038,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_new</span> <span class="o">=</span> <span class="n">df_treatment</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -14055,7 +14055,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[46]:</div>
 
 
 
@@ -14080,7 +14080,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_old</span> <span class="o">=</span> <span class="n">df_control</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -14097,7 +14097,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[47]:</div>
 
 
 
@@ -14122,7 +14122,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_page_converted</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="n">size</span> <span class="o">=</span> <span class="p">(</span><span class="n">n_new</span><span class="p">),</span><span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="o">-</span><span class="n">pop_conversion</span><span class="p">,</span> <span class="n">pop_conversion</span><span class="p">])</span>
@@ -14139,7 +14139,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[48]:</div>
 
 
 
@@ -14164,7 +14164,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">old_page_converted</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="n">size</span> <span class="o">=</span> <span class="p">(</span><span class="n">n_old</span><span class="p">),</span><span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="o">-</span><span class="n">pop_conversion</span><span class="p">,</span> <span class="n">pop_conversion</span><span class="p">])</span>
@@ -14181,7 +14181,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[49]:</div>
 
 
 
@@ -14206,7 +14206,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_page_converted</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">-</span><span class="n">old_page_converted</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -14222,13 +14222,13 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[50]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.0003352430507925913</pre>
+<pre>-0.0012409845431466948</pre>
 </div>
 
 </div>
@@ -14247,7 +14247,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># used the approach consistent with the lessons (the above was confusing me), only sampled 200 as Python was freezing</span>
@@ -14277,12 +14277,12 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Using the actual plot of differences</span>
-<span class="n">pop_variance</span> <span class="o">=</span> <span class="n">control_conversion</span> <span class="o">-</span> <span class="n">treatment_conversion</span>
 <span class="n">p_diffs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">p_diffs</span><span class="p">)</span>
+<span class="n">pop_variance</span> <span class="o">=</span> <span class="n">treatment_conversion</span> <span class="o">-</span> <span class="n">control_conversion</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
 
@@ -14306,7 +14306,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -14327,10 +14327,12 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">p_diffs</span> <span class="o">&gt;</span> <span class="n">pop_variance</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">obs_diff</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;group == &quot;treatment&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">converted</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;group == &quot;control&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">converted</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="p">(</span><span class="n">p_diffs</span> <span class="o">&gt;</span> <span class="n">obs_diff</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14343,13 +14345,13 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[54]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.0936</pre>
+<pre>0.9003</pre>
 </div>
 
 </div>
@@ -14370,7 +14372,7 @@ $$H_0: P_{old} - P_{new} \geq 0$$$$H_1: P_{old} - P_{new} &lt; 0$$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Using both the actual differences and the null distribution this calculation is called the p-value (or alpha).
-With business decisions its ususually ok to set this at 0.05, which basically means that you would allow a 5% chance that the observed statistic came from the null distribution by chance.  In this case the p values is close to 10% which means its much more likely the observed difference came from the null distribution because the null hypothesis is true.  Thus we would fail to reject the null hypothesis in this case</strong></p>
+With business decisions its ususually ok to set this at 0.05, which basically means that you would allow a 5% chance that the observed statistic came from the null distribution by chance.  In this case the p values is close to .90 which means its much more likely the observed difference came from the null distribution because the null hypothesis is true.  Thus we would fail to reject the null hypothesis in this case</strong></p>
 
 </div>
 </div>
@@ -14385,13 +14387,13 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
 
-<span class="n">convert_old</span> <span class="o">=</span> <span class="n">control_conversion</span>
-<span class="n">convert_new</span> <span class="o">=</span> <span class="n">treatment_conversion</span>
+<span class="n">convert_old</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;group == &#39;control&#39;&quot;</span><span class="p">)[</span><span class="s1">&#39;converted&#39;</span><span class="p">])</span>
+<span class="n">convert_new</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;group == &#39;treatment&#39;&quot;</span><span class="p">)[</span><span class="s1">&#39;converted&#39;</span><span class="p">])</span>
 <span class="n">n_old</span> <span class="o">=</span> <span class="n">n_old</span>
 <span class="n">n_new</span> <span class="o">=</span> <span class="n">n_new</span>
 </pre></div>
@@ -14411,7 +14413,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">z_score</span><span class="p">,</span> <span class="n">p_val</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">proportions_ztest</span><span class="p">([</span><span class="n">convert_old</span><span class="p">,</span> <span class="n">convert_new</span><span class="p">],</span> <span class="p">[</span><span class="n">n_old</span><span class="p">,</span> <span class="n">n_new</span><span class="p">],</span> <span class="n">alternative</span><span class="o">=</span><span class="s1">&#39;smaller&#39;</span><span class="p">)</span>
@@ -14428,13 +14430,13 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[56]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(0.0032875796753531767, 0.5013115521701044)</pre>
+<pre>(1.3109241984234394, 0.9050583127590245)</pre>
 </div>
 
 </div>
@@ -14454,7 +14456,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>The p-value is 0.50 is much larger than the results above (nearly 5x).  Again this would confirm that there is no statistical difference in conversions across the old page and the new page, however the rationale for this significant variance seems a bit harder to explain.  I understand broadly that there is a difference due to the one-sided vs two-sided element of the test in that one is either equals or does not and the other (smapling test) was based on being &gt; or not. However I think the variance is also down to overall sample size.  I had previously submitted a version of this file which had an incorrectly calculated p_diffs as I used a short cut and reduced the sample size.  In that instance my p-value from the 'sampling' calculation was closer to 0.50 (similar to that in question m.) Upon correcting this mistake and properly conduction the full 10,000 sample the p-value reduced but remained within the parameters to fail to reject the null hypothesis.  In terms of the z-score its another way to refer to distribution and how far away from the mean a data apoint is.  This would all make sense if there is a p-value of .5 and a z-score of .003 then ultimately the laymens interpretation is that there is no statistical difference between the two pages </strong></p>
+<p><strong>The p-value is 0.90 and vers consistent with results above.  Again this would confirm that there is no statistical difference in conversions across the old page and the new page, however the rationale for this insignificant variance seems a bit harder to explain.  I understand broadly that there is a difference due to the one-sided vs two-sided element of the test in that one is either equals or does not and the other (smapling test) was based on being &gt; or not. In terms of the z-score its another way to refer to distribution and how far away from the mean a data apoint is.  This would all make sense if there is a p-value of .90 and a z-score of 1.31 then ultimately the laymens interpretation is that there is no statistical difference between the two pages </strong></p>
 
 </div>
 </div>
@@ -14472,7 +14474,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>This is a simple binary classification model</strong></p>
+<p><strong>This is a logistic regresion binary classification model</strong></p>
 
 </div>
 </div>
@@ -14487,7 +14489,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;intercept&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
@@ -14502,7 +14504,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14518,7 +14520,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[58]:</div>
 
 
 
@@ -14622,7 +14624,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">Logit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;converted&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;intercept&#39;</span><span class="p">,</span><span class="s1">&#39;ab_page&#39;</span><span class="p">]])</span>
@@ -14664,7 +14666,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">results</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
@@ -14680,7 +14682,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[60]:</div>
 
 
 
@@ -14700,7 +14702,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
   <th>Date:</th>            <td>Sat, 15 May 2021</td> <th>  Pseudo R-squ.:     </th>  <td>8.077e-06</td> 
 </tr>
 <tr>
-  <th>Time:</th>                <td>08:34:47</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
+  <th>Time:</th>                <td>17:10:10</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
 </tr>
 <tr>
   <th>converged:</th>             <td>True</td>       <th>  LL-Null:           </th> <td>-1.0639e+05</td>
@@ -14739,7 +14741,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>The p-value is 0.190 which differs from the 0.09 calculated above, however it remains materially higher than 0.05 suggesting that the page was not statistically significant in driveing conversions</strong></p>
+<p><strong>The p-value is 0.190 which differs from the 0.90 calculated above, however it remains materially higher than 0.05 suggesting that the page was not statistically significant in driveing conversions</strong></p>
 
 </div>
 </div>
@@ -14771,10 +14773,10 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">countries_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;countries.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">countries_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;countries_old.csv&#39;</span><span class="p">)</span>
 <span class="n">df_new</span> <span class="o">=</span> <span class="n">countries_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;user_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;user_id&#39;</span><span class="p">),</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -14785,7 +14787,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Create the necessary dummy variables</span>
@@ -14804,7 +14806,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[67]:</div>
 
 
 
@@ -14922,18 +14924,9 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>h. Though you have now looked at the individual factors of country and page on conversion, we would now like to look at an interaction between page and country to see if there significant effects on conversion.  Create the necessary additional columns, and fit the new model.</p>
-<p>Provide the summary results, and your conclusions based on the results.</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Fit Your Linear Model And Obtain the Results</span>
@@ -14965,7 +14958,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[40]:</div>
+    <div class="prompt output_prompt">Out[69]:</div>
 
 
 
@@ -14985,7 +14978,7 @@ With business decisions its ususually ok to set this at 0.05, which basically me
   <th>Date:</th>            <td>Sat, 15 May 2021</td> <th>  Pseudo R-squ.:     </th>  <td>2.323e-05</td> 
 </tr>
 <tr>
-  <th>Time:</th>                <td>08:35:38</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
+  <th>Time:</th>                <td>17:15:31</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
 </tr>
 <tr>
   <th>converged:</th>             <td>True</td>       <th>  LL-Null:           </th> <td>-1.0639e+05</td>
@@ -15023,6 +15016,270 @@ With business decisions its ususually ok to set this at 0.05, which basically me
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>No, country does not look statistically significant based on the p-values noted in the above as they are all &gt;0.05.  I do not believe it is statistically impacting conversion rate.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>h. Though you have now looked at the individual factors of country and page on conversion, we would now like to look at an interaction between page and country to see if there significant effects on conversion.  Create the necessary additional columns, and fit the new model.</p>
+<p>Provide the summary results, and your conclusions based on the results.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create new dummy variables for UK and US combined AB test pages</span>
+<span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;UK_ab_page&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;UK&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;ab_page&#39;</span><span class="p">]</span>
+<span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;US_ab_page&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;US&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;ab_page&#39;</span><span class="p">]</span>
+<span class="n">df_new</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[73]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>timestamp</th>
+      <th>group</th>
+      <th>landing_page</th>
+      <th>converted</th>
+      <th>intercept</th>
+      <th>ab_page</th>
+      <th>UK</th>
+      <th>US</th>
+      <th>UK_ab_page</th>
+      <th>US_ab_page</th>
+    </tr>
+    <tr>
+      <th>user_id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>834778</td>
+      <td>UK</td>
+      <td>2017-01-14 23:08:43.304998</td>
+      <td>control</td>
+      <td>old_page</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>928468</td>
+      <td>US</td>
+      <td>2017-01-23 14:44:16.387854</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>822059</td>
+      <td>UK</td>
+      <td>2017-01-16 14:04:14.719771</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>711597</td>
+      <td>UK</td>
+      <td>2017-01-22 03:14:24.763511</td>
+      <td>control</td>
+      <td>old_page</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>710616</td>
+      <td>UK</td>
+      <td>2017-01-16 13:14:44.000513</td>
+      <td>treatment</td>
+      <td>new_page</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Fit Your Linear Model And Obtain the Results</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">Logit</span><span class="p">(</span><span class="n">df_new</span><span class="p">[</span><span class="s1">&#39;converted&#39;</span><span class="p">],</span><span class="n">df_new</span><span class="p">[[</span><span class="s1">&#39;intercept&#39;</span><span class="p">,</span><span class="s1">&#39;UK&#39;</span><span class="p">,</span><span class="s1">&#39;US&#39;</span><span class="p">,</span><span class="s1">&#39;ab_page&#39;</span><span class="p">,</span><span class="s1">&#39;UK_ab_page&#39;</span><span class="p">,</span><span class="s1">&#39;US_ab_page&#39;</span><span class="p">]])</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="n">results</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Optimization terminated successfully.
+         Current function value: 0.366109
+         Iterations 6
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[74]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table class="simpletable">
+<caption>Logit Regression Results</caption>
+<tr>
+  <th>Dep. Variable:</th>       <td>converted</td>    <th>  No. Observations:  </th>   <td>290584</td>   
+</tr>
+<tr>
+  <th>Model:</th>                 <td>Logit</td>      <th>  Df Residuals:      </th>   <td>290578</td>   
+</tr>
+<tr>
+  <th>Method:</th>                 <td>MLE</td>       <th>  Df Model:          </th>   <td>     5</td>   
+</tr>
+<tr>
+  <th>Date:</th>            <td>Sat, 15 May 2021</td> <th>  Pseudo R-squ.:     </th>  <td>3.482e-05</td> 
+</tr>
+<tr>
+  <th>Time:</th>                <td>17:19:34</td>     <th>  Log-Likelihood:    </th> <td>-1.0639e+05</td>
+</tr>
+<tr>
+  <th>converged:</th>             <td>True</td>       <th>  LL-Null:           </th> <td>-1.0639e+05</td>
+</tr>
+<tr>
+  <th>Covariance Type:</th>     <td>nonrobust</td>    <th>  LLR p-value:       </th>   <td>0.1920</td>   
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+       <td></td>         <th>coef</th>     <th>std err</th>      <th>z</th>      <th>P>|z|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>intercept</th>  <td>   -2.0040</td> <td>    0.036</td> <td>  -55.008</td> <td> 0.000</td> <td>   -2.075</td> <td>   -1.933</td>
+</tr>
+<tr>
+  <th>UK</th>         <td>    0.0118</td> <td>    0.040</td> <td>    0.296</td> <td> 0.767</td> <td>   -0.066</td> <td>    0.090</td>
+</tr>
+<tr>
+  <th>US</th>         <td>    0.0175</td> <td>    0.038</td> <td>    0.465</td> <td> 0.642</td> <td>   -0.056</td> <td>    0.091</td>
+</tr>
+<tr>
+  <th>ab_page</th>    <td>   -0.0674</td> <td>    0.052</td> <td>   -1.297</td> <td> 0.195</td> <td>   -0.169</td> <td>    0.034</td>
+</tr>
+<tr>
+  <th>UK_ab_page</th> <td>    0.0783</td> <td>    0.057</td> <td>    1.378</td> <td> 0.168</td> <td>   -0.033</td> <td>    0.190</td>
+</tr>
+<tr>
+  <th>US_ab_page</th> <td>    0.0469</td> <td>    0.054</td> <td>    0.872</td> <td> 0.383</td> <td>   -0.059</td> <td>    0.152</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Post adding in additional variable to correctly capture the combined effect of the treatment page and the country (by multiplying the various flags/dummy variables, the conclusion remains the same.  As all p values remain &gt; 0.05 there is no statistical significance between either the control or treatment pages or the various countries</strong></p>
 
 </div>
 </div>
